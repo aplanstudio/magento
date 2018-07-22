@@ -23,7 +23,8 @@ The following example shows how to install using the command line with the follo
 - The database server is on the same host as the web server. The database name is `magento2`, and the username and password are both `magento2`
 
 ```
-php /var/www/html/magento2/bin/magento setup:install --base-url=http://localhost/magento2/ \
+cd /var/www/html/magento2
+php ./bin/magento setup:install --base-url=http://localhost/magento2/ \
 --db-host=localhost --db-name=magento2 --db-user=magento2 --db-password=magento2 \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
